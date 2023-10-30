@@ -1,4 +1,3 @@
-# Абстракция
 class Abstraction:
     def __init__(self, implementation):
         self.implementation = implementation
@@ -6,7 +5,6 @@ class Abstraction:
     def operation(self):
         return self.implementation.operation_implementation()
 
-# Реализация
 class Implementation:
     def operation_implementation(self):
         pass
