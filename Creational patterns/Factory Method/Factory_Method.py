@@ -43,6 +43,7 @@ creator_a = ConcreteCreatorA()
 product_a = creator_a.some_operation()
 print(product_a)
 
+
 creator_b = ConcreteCreatorB()
 product_b = creator_b.some_operation()
 print(product_b)
