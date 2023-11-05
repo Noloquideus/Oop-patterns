@@ -17,5 +17,4 @@ class Singleton:
 # Usage example
 singleton_instance1 = Singleton.get_instance()
 singleton_instance2 = Singleton.get_instance()
-
 print(singleton_instance1 is singleton_instance2)  # True
