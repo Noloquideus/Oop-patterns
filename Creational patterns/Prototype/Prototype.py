@@ -17,11 +17,9 @@ class ConcretePrototype(Prototype):
 # Пример использования
 prototype = ConcretePrototype("Initial data")
 clone = prototype.clone()
-
 print(prototype)  # "Data: Initial data"
 print(clone)  # "Data: Initial data"
 
 clone.data = "Modified data"
-
 print(prototype)  # "Data: Initial data"
 print(clone)  # "Data: Modified data"
