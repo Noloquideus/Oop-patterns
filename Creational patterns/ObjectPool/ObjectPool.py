@@ -2,6 +2,7 @@ import threading
 
 
 class ObjectPool:
+    
     def __init__(self, object_factory, max_size):
         self._object_factory = object_factory
         self._max_size = max_size
