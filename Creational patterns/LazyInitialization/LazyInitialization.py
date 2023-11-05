@@ -12,7 +12,6 @@ class LazyInitialization:
             self._expensive_data = _initialize_expensive_data()
         return self._expensive_data
 
-
 # Usage example
 lazy_obj = LazyInitialization()
 
