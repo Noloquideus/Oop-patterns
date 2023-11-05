@@ -27,7 +27,7 @@ class CarBuilder:
         return Car(self.model, self.color, self.engine_power)
 
 
-# Using the Template Builder
+# Using
 car_builder = CarBuilder()
 car_builder.set_model("Sedan").set_color("Red").set_engine_power(200)
 car = car_builder.build()
