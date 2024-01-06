@@ -1,20 +1,13 @@
 class Singleton:
-    __instance = None
+    _instance = None
 
-    @staticmethod
-    def get_instance():
-        if Singleton.__instance is None:
-            Singleton()
-        return Singleton.__instance
-
-    def __init__(self):
-        if Singleton.__instance is not None:
-            raise Exception("This class is a singleton!")
-        else:
-            Singleton.__instance = self
+    def __new__(cls, *args, **kwargs):
+        if not cls._instance:
+            cls._instance = super(SingletonLogger, cls).__new__(cls)
+            cls._instance.__init__(*args, **kwargs)
+        return cls._instance
 
 
 # Usage example
-singleton_instance1 = Singleton.get_instance()
-singleton_instance2 = Singleton.get_instance()
-print(singleton_instance1 is singleton_instance2)  # True
+class Class(Singleton):
+    pass
